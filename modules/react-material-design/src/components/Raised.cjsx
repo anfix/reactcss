@@ -1,16 +1,17 @@
 'use strict'
 
 React = require('react')
+PropTypes = require('prop-types');
 reactCSS = require('reactcss')
 
 
 class Raised extends React.Component
   @propTypes:
-    background: React.PropTypes.string
-    zDepth: React.PropTypes.oneOf(['0', '1', '2', '3', '4', '5', 0, 1, 2, 3, 4, 5])
-    radius: React.PropTypes.oneOfType([
-      React.PropTypes.string,
-      React.PropTypes.number
+    background: PropTypes.string
+    zDepth: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', 0, 1, 2, 3, 4, 5])
+    radius: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number
     ])
 
   @defaultProps =

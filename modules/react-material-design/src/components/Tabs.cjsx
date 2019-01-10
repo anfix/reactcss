@@ -3,7 +3,7 @@
 React = require('react')
 css = require('reactcss')
 isString = require('lodash/isString')
-
+PropTypes = require('prop-types');
 Tab = require('./Tab')
 Link = require('./Link')
 Ink = require('./Ink')
@@ -19,10 +19,10 @@ class Tabs extends React.Component
   css: css.inline
 
   @propTypes =
-    tabs: React.PropTypes.array
-    align: React.PropTypes.oneOf(['none', 'justify', 'left', 'center'])
-    children: React.PropTypes.array
-    background: React.PropTypes.string
+    tabs: PropTypes.array
+    align: PropTypes.oneOf(['none', 'justify', 'left', 'center'])
+    children: PropTypes.array
+    background: PropTypes.string
 
   @propExamples =
     tabs:
